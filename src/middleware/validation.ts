@@ -30,7 +30,7 @@ export const validateMyRestaurantRequest = [
   body("country").notEmpty().withMessage("Country is required"),
   body("deliveryPrice")
     .isFloat({ min: 0 })
-    .withMessage("Delivery price must be a positive number"),
+    .withMessage("Delivery charge must be a positive number"),
   body("estimatedDeliveryTime")
     .isInt({ min: 0 })
     .withMessage("Estimated delivery time must be a positive interfer"),
