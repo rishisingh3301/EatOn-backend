@@ -5,7 +5,6 @@ import mongoose from "mongoose";
 import Order from "../models/order";
 
 const getMyRestaurant = async (req: Request, res: Response) => {
-  // console.log("came here");
   try {
     const restaurant = await Restaurant.findOne({ user: req.userId });
     if (!restaurant) {
